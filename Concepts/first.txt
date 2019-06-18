@@ -1,0 +1,11 @@
+1. Bit Manipulation
+
+2. Singleton Design Pattern
+
+3. Factory Design Pattern
+
+4. Memory (Stack vs Heap)
+
+5. Recursions
+
+6. Big-O time

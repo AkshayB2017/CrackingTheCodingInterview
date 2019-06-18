@@ -1,2 +1,11 @@
-dummy content
+1. Breadth First Search
 
+2. Depth First Search
+
+3. Binary Search
+
+4. Merge Sort
+
+5. Quick Sort
+
+6. Trees
