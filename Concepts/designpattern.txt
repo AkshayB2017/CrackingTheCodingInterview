@@ -1,0 +1,32 @@
+Singleton pattern is a design pattern which restricts a class to instantiate its multiple objects. It is nothing but a way of defining a class. Class is defined in such a way that only one instance of the class is created in the complete execution of a program or project. It is used where only a single instance of a class is required to control the action throughout the execution. A singleton class shouldn’t have multiple instances in any case and at any cost. Singleton classes are used for logging, driver objects, caching and thread pool, database connections.
+
+
+It should have only one instance : This is done by providing an instance of the class from within the class. Outer classes or subclasses should be prevented to create the instance. This is done by making the constructor private in java so that no class can access the constructor and hence cannot instantiate it.
+    
+Instance should be globally accessible : Instance of singleton class should be globally accessible so that each class can use it. In Java, it is done by making the access-specifier of instance public.
+
+Instantisation:
+
+Early initialization : In this method, class is initialized whether it is to be used or not. The main advantage of this method is its simplicity. You initiate the class at the time of class loading. Its drawback is that class is always initialized whether it is being used or not.
+Lazy initialization : In this method, class in initialized only when it is required. It can save you from instantiating the class when you don’t need it. Generally, lazy initialization is used when we create a singleton class.
+
+Examples
+
+java.lang.Runtime : Java provides a class Runtime in its lang package which is singleton in nature. Every Java application has a single instance of class Runtime that allows the application to interface with the environment in which the application is running. The current runtime can be obtained from the getRuntime() method.
+An application cannot instantiate this class so multiple objects can’t be created for this class. Hence Runtime is a singleton class.
+java.awt.Desktop : The Desktop class allows a Java application to launch associated applications registered on the native desktop to handle a URI or a file.
+
+------------------------------------------------------------------------
+Factory Reset Method
+
+
+. In Factory pattern, we create object without exposing the creation logic to client and the client use the same common interface to create new type of object.
+The idea is to use a static member-function (static factory method) which creates & returns instances, hiding the details of class modules from user.
+
+A factory pattern is one of the core design principles to create an object, allowing clients to create objects of a library(explained below) in a way such that it doesn’t have tight coupling with the class hierarchy of the library.
+
+
+ A library is something which is provided by some third party which exposes some public APIs and clients make calls to those public APIs to complete its task. A very simple example can be different kinds of Views provided by Android OS.
+
+ 
+
